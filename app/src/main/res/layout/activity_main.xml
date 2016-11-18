@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dreamsforall.satelliteproject.himawariandroid.MainActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow android:minHeight="375dp">
+            <ImageView
+                android:layout_width="300dp"
+                android:id="@+id/imageView"
+                android:layout_height="350dp"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent">
+            <Button
+                android:text="Download Image"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button"
+                android:onClick="loadImage"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="Set Wallpaper"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/setWallpaper"
+                android:onClick=""/>
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>
